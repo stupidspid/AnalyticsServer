@@ -15,9 +15,9 @@ public class AnalyticService : MonoBehaviour
     private List<EventData> sendingEvents = new();
     private bool isCooldownActive;
 
-    private void Start()
+    private async void Start()
     {
-        LoadEvents();
+        await LoadEvents();
     }
 
     public async UniTask TrackEvent(string type, string data)
@@ -64,13 +64,21 @@ public class AnalyticService : MonoBehaviour
         File.WriteAllText(JSON_PATH, json);
     }
     
-    private void LoadEvents()
+    private async UniTask LoadEvents()
     {
         if (File.Exists(JSON_PATH))
         {
             string json = File.ReadAllText(JSON_PATH);
             List<EventData> eventList = JsonUtility.FromJson<List<EventData>>(json);
             sendingEvents = eventList;
+        }
+
+        while (sendingEvents.Count > 0)
+        {
+            if (!isCooldownActive)
+            {
+                await UploadPostEvents();
+            }
         }
     }
     
