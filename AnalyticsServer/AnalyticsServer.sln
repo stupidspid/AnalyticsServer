@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{b029ad19-71c6-46fe-9446-8029309304b4}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask", "UniTask.csproj", "{f8e48a90-ae26-47b6-3b77-1d8c549c891c}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.Linq", "UniTask.Linq.csproj", "{e6166643-8bb8-8ffd-d44a-0a344633b5e8}"
@@ -20,6 +22,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{b029ad19-71c6-46fe-9446-8029309304b4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b029ad19-71c6-46fe-9446-8029309304b4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{f8e48a90-ae26-47b6-3b77-1d8c549c891c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{f8e48a90-ae26-47b6-3b77-1d8c549c891c}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e6166643-8bb8-8ffd-d44a-0a344633b5e8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

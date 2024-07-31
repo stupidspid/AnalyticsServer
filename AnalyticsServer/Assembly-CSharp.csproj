@@ -41,7 +41,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\AnalyticService.cs" />
+    <Compile Include="Assets\Scripts\AnalyticService.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.28f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -815,6 +815,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UniTask.Addressables.csproj">
+      <Project>{688a87d8-a9c0-6d5b-0842-27c1c057d17e}</Project>
+      <Name>UniTask.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{e7f95b14-626d-a9f3-baaf-72be77e2f869}</Project>
+      <Name>UniTask.DOTween</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{f8e48a90-ae26-47b6-3b77-1d8c549c891c}</Project>
+      <Name>UniTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.TextMeshPro.csproj">
+      <Project>{ab28f687-1a5a-f86c-c02d-ee9a25a52c64}</Project>
+      <Name>UniTask.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Linq.csproj">
+      <Project>{e6166643-8bb8-8ffd-d44a-0a344633b5e8}</Project>
+      <Name>UniTask.Linq</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
